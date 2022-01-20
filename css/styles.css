@@ -896,7 +896,7 @@ ul {
 .policy {
   position: relative;
 
-  display: flex;
+  display: inline-flex;
   align-items: center;
 
   font-size: 14px;
@@ -945,4 +945,15 @@ ul {
 
 .policy-agree:checked ~ .icon-policy.non-active {
   opacity: 0;
+}
+
+.policy-link {
+  color: var(--brand-color);
+  margin-left: 4px;
+
+  transition: color 250ms var(--main-animation-function);
+}
+
+.policy-link:hover {
+  color: #188ce8;
 }
