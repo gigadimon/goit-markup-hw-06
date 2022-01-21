@@ -599,6 +599,9 @@ ul {
 .footer-input:focus {
   border: 1px solid var(--brand-color);
 }
+.footer-input:focus {
+  outline: 1px solid var(--brand-color);
+}
 
 .footer-input::placeholder {
   font-size: 16px;
@@ -833,9 +836,7 @@ ul {
 }
 
 .form-item:hover .input-area,
-.form-item:focus .input-area,
-.form-item:hover .comment,
-.form-item:focus .comment {
+.form-item:hover .comment {
   border: 1px solid var(--brand-color);
 }
 
@@ -893,6 +894,12 @@ ul {
   transition: border 250ms var(--main-animation-function);
 }
 
+.input-area:focus,
+.comment:focus {
+  outline: 1px solid var(--brand-color);
+  border: 1px solid var(--brand-color);
+}
+
 .policy {
   position: relative;
 
@@ -938,6 +945,9 @@ ul {
 .policy:hover .icon-policy.non-active {
   fill: var(--brand-color);
 }
+.policy:hover {
+  cursor: pointer;
+}
 
 .policy-agree:checked ~ .icon-policy.active {
   opacity: 1;
@@ -954,6 +964,7 @@ ul {
   transition: color 250ms var(--main-animation-function);
 }
 
-.policy-link:hover {
+.policy-link:hover,
+.policy-link:focus {
   color: #188ce8;
 }
